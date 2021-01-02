@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #63EFA7;
+    font-family: Roboto-;
     position: absolute;
     font-size: 128px;
     top: 25%;
@@ -11,7 +11,7 @@ h1 {
 }
 .button {
     width: auto;
-    height: 96px;
+    height: 128px;
     border-radius: 32px;
     border-color: aqua;
     border-style:groove;
@@ -21,6 +21,9 @@ h1 {
     outline: none;
     font-size: 64px;
     position: relative;
+    margin-left: 8px;
+    margin-right: 8px;
+    opacity: 65%;
 }
 .button:hover {
     background-color: aqua;
@@ -28,10 +31,25 @@ h1 {
 .button:active {
     background-color: lightskyblue;
 }
-div {
+div.top {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+div.bottom {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+.footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: darkslategray;
+    position: absolute;
+    top: 97%;
 }
