@@ -9,4 +9,4 @@ function download() {
         // Downloads mod if on computer
       }
     alert("There is currently no public version of DF Pocket Dev.\nPlease check back later!");
-}
+    }
