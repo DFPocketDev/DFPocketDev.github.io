@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 128px;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.button {
+    width: auto;
+    height: 96px;
+    border-radius: 32px;
+    border-color: aqua;
+    border-style:groove;
+    background-color: aquamarine;
+    border-width: 4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 64px;
+    position: relative;
+}
+.button:hover {
+    background-color: aqua;
+}
+.button:active {
+    background-color: lightskyblue;
+}
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
