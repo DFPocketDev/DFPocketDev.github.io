@@ -1,7 +1,8 @@
 h1 {
     text-align: center;
     color: #63EFA7;
-    font-family: Roboto-;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     position: absolute;
     font-size: 128px;
     top: 25%;
@@ -11,6 +12,9 @@ h1 {
 }
 .button {
     width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 50;
+    color:white;
     height: 128px;
     border-radius: 32px;
     border-color: aqua;
@@ -26,7 +30,8 @@ h1 {
     opacity: 65%;
 }
 .button:hover {
-    background-color: aqua;
+    background-color: #00ffff;
+    opacity: 25%;
 }
 .button:active {
     background-color: lightskyblue;
