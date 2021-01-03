@@ -22,8 +22,9 @@ function changePage(page) {
 
 function aboutLoad() {
   randomBackground();
-  profile('2ee60a1d-8913-4d8d-8022-72fa0738d0e1', "Designed logo, helped make stylistic descisions.")
-  profile('f33f0e36-31d9-47cb-a4a6-1d30e5816232', "Lead Developer of DFPocketDev.");
+  profile('f33f0e36-31d9-47cb-a4a6-1d30e5816232', "Lead Developer of DFPocketDev.").then(function() {
+    profile('2ee60a1d-8913-4d8d-8022-72fa0738d0e1', "Helped design logo and make stylistic descisions.");
+  });
 }
 async function profile(uuid, bio) {
   username = await getUsername(uuid);
@@ -38,4 +39,8 @@ function getUsername(uuid) {
   .then(json => {
       return json[json.length - 1].name;
   });
+}
+function setBackground(node) {
+  var bg = "url('backgrounds/node" + node + ".png')";
+  document.body.style.backgroundImage = bg;
 }

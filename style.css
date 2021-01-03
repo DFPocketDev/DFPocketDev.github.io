@@ -13,11 +13,11 @@ h1 {
 .button {
     width: auto;
     font-family: 'Roboto', sans-serif;
-    font-weight: 50;
+    font-weight: 700;
     color: black;
     height: 128px;
     border-radius: 32px;
-    border-color: aqua;
+    border-color: #63EFA7;
     border-style: groove;
     background-color: rgba(127, 255, 212, 0.1);
     border-width: 4px;
