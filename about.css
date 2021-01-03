@@ -1,77 +1,92 @@
 body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-div.profile {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    background-color: rgba(127, 255, 212, 0.5);
-    align-items: center;
-    position: relative;
-    height: fit-content;
-}
+
 div.card {
-    display:inline-flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: normal;
-    width: fit-content;
-    background-color: rgba(106, 106, 255, 0.25);
-    align-content: center;
-    left: 50%;
-    vertical-align: middle;
-    margin:8px;
+  padding-top: 1rem;
+  justify-content: center;
+  align-items: normal;
+  background-color: #262857;
+  align-content: center;
+  left: 50%;
+  vertical-align: middle;
+  margin: 8px;
+  min-width: 15rem;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 5px 5px #262857;
+  max-width: 400px;
+  min-width: 400px;
+  text-align: center;
 }
 p.bio {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 32px;
-    vertical-align: top;
-    left: 16px;
-    top:auto;
-    position: relative;
+  font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  vertical-align: top;
+  left: 16px;
+  top: auto;
+  position: relative;
+  font-weight: 600;
+  color: white;
 }
-p.profile {
-    margin: 32px;
-    color:black;
-    position: relative;
-    font-size: 24px;
-    font-weight: bolder;
+p.name {
+  font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
+  margin: 32px;
+  color: white;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
 }
 img.profile {
-    margin: 16px;
-    margin-top: 8px;
-    position: relative;
+  margin: 1rem;
+
+  position: relative;
 }
-button.menu { 
-    width: auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: black;
-    height: 32px;
-    border-radius: 32px;
-    border-color: aqua;
-    border-style: groove;
-    background-color: rgba(127, 255, 212, 0.5);
-    border-width: 4px;
-    cursor: pointer;
-    outline: none;
-    font-size: 16px;
-    position: relative;
-    margin: 8px;
+button.menu {
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: black;
+  height: 32px;
+  border-radius: 32px;
+  border-color: white;
+  border-style: solid;
+  background-color: #ffef00;
+  border-width: 4px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  margin: 8px;
 }
 button.menu:hover {
-    background-color: #00ffff;
-    opacity: 25%;
+  background-color: white;
 }
 button.menu:active {
-    background-color: lightskyblue;
+  background-color: white;
 }
 div.header {
-    background-color: rgba(127, 255, 212, 0.5);
-    margin: 8px;
+  background-color: #ffef00;
+  margin: 8px;
+}
+
+.cards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#back {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ffef00;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+
+  font-size: 128px;
 }

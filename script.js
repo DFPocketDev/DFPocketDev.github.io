@@ -39,7 +39,7 @@ function aboutLoad() {
             function () {
               profile(
                 "2ee60a1d-8913-4d8d-8022-72fa0738d0e1",
-                "Helped design logo and make stylistic descisions"
+                "Helped design logo and make stylistic decisions"
               );
             }
           );
@@ -48,18 +48,12 @@ function aboutLoad() {
     }
   );
 }
+
 async function profile(uuid, bio) {
   username = await getUsername(uuid);
-  console.log(username);
-  var profile =
-    '<div class="profile"><div class="card"><img class="profile" src="https://mc-heads.net/head/' +
-    uuid +
-    '"><p class="profile">' +
-    username +
-    '<p></div><p class="bio">' +
-    bio +
-    "<p></div><hr>";
-  document.body.innerHTML = document.body.innerHTML + profile;
+
+  var profile = `<div class="card"><p class="name">${username}<p><img class="profile" src="https://mc-heads.net/head/${uuid}"><p class="bio">${bio}<p></div>`;
+  document.querySelector(".cards").innerHTML += profile;
 }
 function getUsername(uuid) {
   return fetch("https://mojang-api.vercel.app/v1/names?uuid=" + uuid)
