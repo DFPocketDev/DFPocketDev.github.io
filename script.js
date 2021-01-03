@@ -23,11 +23,11 @@ function changePage(page) {
 function aboutLoad() {
   randomBackground();
   profile('f33f0e36-31d9-47cb-a4a6-1d30e5816232', "Lead Developer").then(function() {
-    profile('2ee931a2-3541-4f7b-95f2-7f15a039e119', "Developer");
-  }).then(function() {
-    profile('f4f31774-ec2d-4e1a-8aef-f2906509d927', "Developer");
-  }).then(function() {
-    profile('2ee60a1d-8913-4d8d-8022-72fa0738d0e1', "Helped design logo and make stylistic descisions");
+    profile('2ee931a2-3541-4f7b-95f2-7f15a039e119', "Developer").then(function() {
+      profile('f4f31774-ec2d-4e1a-8aef-f2906509d927', "Developer").then(function() {
+        profile('2ee60a1d-8913-4d8d-8022-72fa0738d0e1', "Helped design logo and make stylistic descisions");
+      });
+    });
   });
 }
 async function profile(uuid, bio) {
